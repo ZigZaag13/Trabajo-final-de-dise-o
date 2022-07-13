@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Santa Rosa de Lima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <script src="js/display.js" type="text/javascript"></script>
+    <script src="js/calculadora.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <img src="img/santa.png" alt="Santa Rosa de Lima - Logo" class="logo">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="inicio.html">Quienes somos</a></li>
+                <li><a href="contactos.html">Enseñanza</a></li>
+                <li><a href="notas.html">Notas</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+   </header>
+   <div class="container">
+    <div class="calculadora">
+        <div class="display">
+            <div id="valor-anterior"></div>
+            <div id="valor-actual"></div>
+        </div>
+        <button class="col-2" onclick="display.borrarTodo()">C</button>
+        <button onclick="display.borrar()">&larr;</button>
+        <button class="operador" value="dividir">%</button>
+        <button class="numero">7</button>
+        <button class="numero">8</button>
+        <button class="numero">9</button>
+        <button class="operador" value="multiplicar">X</button>
+        <button class="numero">4</button>
+        <button class="numero">5</button>
+        <button class="numero">6</button>
+        <button class="operador" value="restar">-</button>
+        <button class="numero">1</button>
+        <button class="numero">2</button>
+        <button class="numero">3</button>
+        <button class="operador" value="sumar">+</button>
+        <button class="col-2 numero">0</button>
+        <button class="numero">.</button>
+        <button class="operador" value="igual">=</button>
+    </div>
+</div>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/santa.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Acerca de nosotros :</h2>
+                <p>Brindamos una educación integral, que se caracteriza por su excelencia académica,
+                    sólida formación cristiana y moral.</p>
+                <p>A través de este espacio, queremos presentar, en síntesis, lo que somos.</p>
+                </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Santa Rosa de Lima</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

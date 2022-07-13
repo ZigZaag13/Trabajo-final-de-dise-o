@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas - Santa Rosa de Lima</title>
+    <script src="https://kit.fontawesome.com/97147842d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contactanos.css">
+    <script type="text/javascript" charset="utf-8" src="js/Mensaje.js"></script>
+</head>
+<body>
+
+   <header>
+        <nav>
+            <div>
+                <img src="img/santa.png" alt="Santa Rosa de Lima - Logo" class="logo">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="inicio.html">Quienes somos</a></li>
+                <li><a href="contactos.html">Enseñanza</a></li>
+                <li><a href="notas.html">Notas</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+   </header>
+   <form action="">
+    <div class="div1">
+        <table align="center">
+            <tr>
+                <td><label for="">Nombre:</label></td>    
+                <td><input type="text" size="50px" id="nombre" placeholder="Ingrese su nombre" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Primer Apellido:</label></td>    
+                <td><input type="text" size="50px" id="papellido" placeholder="Ingrese su Apellido" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Segundo Apellido:</label></td>    
+                <td><input type="text" size="50px" id="sapellido" placeholder="Ingrese su Apellido" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Correo Electronico:</label></td>
+                <td><input type="email" size="50px" id="celectronico" placeholder="Ingrese su Correo Electronico"></td>
+            </tr>
+            <tr>
+                <td><p>Mensaje</p></td>
+                <td><textarea class="texarea" name="" id="textarea" cols="50" rows="10" required></textarea></td>
+            </tr>
+            <tr>
+                <td><input  class="button" type="submit" onclick="Enviar()" href="index.html"></td>
+            </tr>
+        </table>
+    </div> 
+    </form>º
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/santa.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Acerca de nosotros :</h2>
+                <p>Brindamos una educación integral, que se caracteriza por su excelencia académica,
+                    sólida formación cristiana y moral.</p>
+                <p>A través de este espacio, queremos presentar, en síntesis, lo que somos.</p>
+                </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Santa Rosa de Lima</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas - Santa Rosa de Lima</title>
+    <script src="https://kit.fontawesome.com/97147842d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/notas.css">
+</head>
+<body>
+
+   <header>
+        <nav>
+            <div>
+                <img src="img/santa.png" alt="Santa Rosa de Lima - Logo" class="logo">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="inicio.html">Quienes somos</a></li>
+                <li><a href="contactos.html">Enseñanza</a></li>
+                <li><a href="notas.html">Notas</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+   </header>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+<center>
+   <form action="">
+    <table border="1" class="tabla1">
+            <tr>
+               <td>CURSO</td>
+            </tr>
+            <tr>
+                <td>Nota de Matemática</td>
+                <td><input type="number" id="a"></td>
+            </tr>
+            <tr>
+                <td>Nota Comunicación</td>
+                <td><input type="number" id="b"></td>
+            </tr>
+            <tr>
+                <td>Nota Historia</td>
+                <td><input type="number" id="c"></td>
+            </tr>
+            <tr>
+                <td>Nota Ciencia</td>
+                <td><input type="number" id="d"></td>
+            </tr>
+            <tr>
+            <tr>
+                <td>Nota Informatica</td>
+                <td><input type="number" id="e"></td>
+            </tr>
+            <tr>
+                <td>Inglés</td>
+                <td><input type="number" id="f"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Ingresar" onclick="operacion()"></td>                            
+            </tr>
+            <tr>
+                <td>Promedio</td>
+                <td><input type="text" id="A_base"></td>
+            </tr>
+            <tr>
+                <td>Alumno</td>
+                <td><input type="text" id="A_lateral"></td>
+            </tr>
+            <tr>
+                <td>Categoría</td>
+                <td><input type="text" id="A_total"></td>
+            </tr>
+    </table>
+</form>
+
+<script>
+            function operacion(){
+                    //datos
+                    var num1=parseInt(document.getElementById('a').value);
+                    var num2=parseInt(document.getElementById('b').value);
+                    var num3=parseInt(document.getElementById('c').value);
+                    var num4=parseInt(document.getElementById('d').value);
+                    var num5=parseInt(document.getElementById('e').value);
+                    var num6=parseInt(document.getElementById('f').value);
+                    //operacion
+                        var A_B = (num1 + num2 + num3 + num4 + num5 + num6) / 6
+                        if (A_B >= 17){
+                        var cate=('APROBADO');}
+                        else if  (A_B >=13 && A_B <17){
+                            cate=('APROBADO');}
+                        else if  (A_B >=10 && A_B <13){
+                            cate=('REPROBADO');}
+                        else if  (A_B < 10){
+                            cate=('REPROBADO');}
+                        var A_B = (num1 + num2 + num3 + num4) / 4
+                        if (A_B >= 17){
+                        var cat=('AD');}
+                        else if  (A_B >=13 && A_B <17){
+                            cat=('A');}
+                        else if  (A_B >=10 && A_B <13){
+                            cat=('B');}
+                        else if  (A_B < 10){
+                            cat=('C');}
+                                                        
+                    // salida=
+                    document.getElementById('A_base').value=A_B;
+                    document.getElementById('A_lateral').value=cate;
+                    document.getElementById('A_total').value=cat;
+                    document.getElementById('sumar').value=pro;
+                    document.getElementById('sumar1').value=pro_teo;
+
+                }
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/santa.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Acerca de nosotros :</h2>
+                <p>Brindamos una educación integral, que se caracteriza por su excelencia académica,
+                    sólida formación cristiana y moral.</p>
+                <p>A través de este espacio, queremos presentar, en síntesis, lo que somos.</p>
+                </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Santa Rosa de Lima</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    
+
+    
+</body>
+</html>
